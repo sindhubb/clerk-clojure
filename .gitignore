@@ -1,4 +1,8 @@
-target/
 .vscode
 .lsp/
 .clj-kondo/
+.clerk/
+.calva/
+.lein-repl-history
+target/
+.nrepl-port

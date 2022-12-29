@@ -1,7 +1,8 @@
 (defproject advent-of-code "0.1.0-SNAPSHOT"
   :description "Clerk + Databases"
   :url ""
-  :dependencies [[org.clojure/clojure "1.10.1"]
+  :dependencies [[metosin/compojure-api "2.0.0-alpha31"]
+                 [org.clojure/clojure "1.10.1"]
                  [ring/ring-jetty-adapter "1.6.3"]
                  [io.github.nextjournal/clerk "0.12.707"]]
   :ring {:handler server/app

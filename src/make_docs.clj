@@ -5,14 +5,10 @@
 
 (defn files
   []
-  (->> (file "src/databases")
+  (->> (file "src/clj")
        (file-seq)
        (map #(.getPath %))
        (filter #(.endsWith % ".clj"))))
-
-;; (defn files
-;;   []
-;;   [""])
 
 (defn -main
   []

@@ -4,7 +4,7 @@
   (:gen-class))
 
 (def app
-  (route/files "/" {:root "./public"}))
+  (route/files "/" {:root "./docs"}))
 
 (defn -main
   [port]

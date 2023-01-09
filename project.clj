@@ -4,7 +4,9 @@
   :dependencies [[metosin/compojure-api "2.0.0-alpha31"]
                  [org.clojure/clojure "1.10.1"]
                  [ring/ring-jetty-adapter "1.6.3"]
-                 [io.github.nextjournal/clerk "0.12.707"]]
+                 [io.github.nextjournal/clerk "0.12.707"]
+                 [clj-http "3.12.3"]
+                 [cheshire "5.9.0"]]
   :ring {:handler server/app
          :init server/init}
   :main ^:skip-aot server

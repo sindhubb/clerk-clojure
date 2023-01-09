@@ -47,7 +47,7 @@ control + option + space   - starts custom calva commands
 
 ## How to get HTML?
 
-Run `lein make-docs` and you should see html files generated under `src/databases`
+Run `lein make-docs` and you should see html files generated under `src/<name-of-dir>`
 
 ## How to view HTML?
 

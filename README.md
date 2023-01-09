@@ -10,40 +10,9 @@ https://sindhubb.github.io/clerk-clojure/
 ## How to run this to contribute?
 
 1. Install dependencies with `lein deps` 
-2. Ensure you have Calva installed on your VSCode
-3. Start Calva Leiningen project REPL
-4. Add this to this repository's `.vscode` into `settings.json`:
-
-```
-{
-    "calva.jackInEnv": {
-    },
-    "calva.customREPLCommandSnippets": [
-        {
-            "name": "Open in Clerk",
-            "key": "d",
-            "snippet": "(require '[nextjournal.clerk :refer [show!]]) (show! \"$file\")"
-        },
-        {
-            "name": "Start Clerk",
-            "key": "s",
-            "snippet": "(require '[nextjournal.clerk :refer [serve!]])  (serve! {:port <PORT> :watch-paths [\"src/<name_of_dir>\"]})"
-        }
-    ],
-}
-```
-Remember to:
-1. change <name_of_dir> to actual folder name within `src`
-2. replace <PORT> with your desired port.
-
-5. Press these keys: 
-
-```
-control + option + space   - starts custom calva commands
-  s -> start clerk
-  d -> open current file in clerk
-```
-6. Browse `http://localhost:<PORT>` to see the live notebook
+2. Run `lein start-clerk <PORT>` where PORT can be any port you want
+3. Hit Ctrl + S on a clojure file (save the file)
+4. Browse `http://localhost:<PORT>` to see the live notebook
 
 ## How to get HTML?
 

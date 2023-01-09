@@ -27,12 +27,14 @@ https://sindhubb.github.io/clerk-clojure/
         {
             "name": "Start Clerk",
             "key": "s",
-            "snippet": "(require '[nextjournal.clerk :refer [serve!]])  (serve! {:port <PORT> :watch-paths [\"src/databases\"]})"
+            "snippet": "(require '[nextjournal.clerk :refer [serve!]])  (serve! {:port <PORT> :watch-paths [\"src/<name_of_dir>\"]})"
         }
     ],
 }
 ```
-Remember to replace <PORT> with your desired port. 
+Remember to:
+1. change <name_of_dir> to actual folder name within `src`
+2. replace <PORT> with your desired port.
 
 5. Press these keys: 
 

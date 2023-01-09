@@ -3,9 +3,11 @@
             [clojure.java.io :refer [file]])
   (:gen-class))
 
+(def inpath "src/clj")
+
 (defn files
   []
-  (->> (file "src/clj")
+  (->> (file inpath)
        (file-seq)
        (map #(.getPath %))
        (filter #(.endsWith % ".clj"))))

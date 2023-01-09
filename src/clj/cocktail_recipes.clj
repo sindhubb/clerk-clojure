@@ -37,8 +37,9 @@
 
 ;; ## Multi-Ingredient search 
 ;; Remember our goal was to use up as many of our items in bar cabinet as possible. This means we will have to look for recipes that use them all. However, API docs makes this type of search a paid feature. 
-
+{:nextjournal.clerk/visibility {:code :hide :result :show}}
 (ImageIO/read (File. "./src/clj/img/gotta_pay.png"))
+{:nextjournal.clerk/visibility {:code :show :result :show}}
 
 ;; We can get around this with help of Clojure. Let's us see how
 

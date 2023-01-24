@@ -20,4 +20,10 @@ Run `lein make-docs` and you should see html files generated under `src/<name-of
 
 ## How to view HTML?
 
-You can open `./docs/index.html` in any browser and browse as you normally would. You can also serve these HTML files with `lein ring server-headless <PORT>` 
+You can open `./docs/index.html` in any browser and browse as you normally would. 
+
+## How to run this app for development?
+
+* `lein ring server-headless <PORT>` (gives hot reloading) 
+* `lein run <PORT>` (gives a simple server)
+
